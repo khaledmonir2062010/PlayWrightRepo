@@ -30,6 +30,6 @@ test ("Login test_02",async({page, baseURL})=>{
     await login.enterLoginPassword(password);
     await login.ClickLoginBtn();
 
-    expect(await page.title()).toBe("My Account");
+    expect(await page.title()).toBe("Account Login");
 
 })

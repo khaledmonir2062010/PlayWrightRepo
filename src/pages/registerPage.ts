@@ -6,7 +6,7 @@ export default class RegisterPage{
 
     async enterFirstName(firstname: string)
     {
-        await this.page.locator("input-firstname")
+        await this.page.locator("input[name='firstname']")
         .type(firstname)
     }
     async enterLastName(lastname: string)
